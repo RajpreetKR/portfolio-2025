@@ -19,3 +19,8 @@ body {
     padding: 12px;
     vertical-align: middle;
 }
+
+h1, h2, p, h3{
+    margin-left: 75px;
+    margin-right: 75px;
+}
