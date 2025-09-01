@@ -20,7 +20,46 @@ body {
     vertical-align: middle;
 }
 
+.navbar a:hover {
+    color: rgb(219, 21, 59);
+    font-size: 22px
+}
+
 h1, h2, p, h3{
+    display: flex;
     margin-left: 75px;
     margin-right: 75px;
+}
+
+#intro {
+    font-size: 150%;
+    word-break: break-word;
+    max-width: 55%;
+    margin-top: 50px;
+}
+
+#profile {
+    font-size: 150%;
+    word-wrap: break-word;
+    max-width: 55%;
+}
+
+.row {
+    display: flex;
+}
+
+.column {
+    flex: 50%;
+    margin-right: 150px;
+    padding: 5px;
+}
+
+#image {
+    float: right;
+    margin-top: -325px;
+}
+
+footer {
+    position: absolute;
+    bottom: 5px;
 }
