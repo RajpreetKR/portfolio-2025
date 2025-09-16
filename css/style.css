@@ -15,15 +15,15 @@ body {
 .navbar {
     overflow: hidden;
     margin-left: 64px;
-    padding-top: 15px;
+    margin-top: 15px;
     display: block;
     justify-content: center;
 }
 
-.navbar a{
+.navbar a {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bolder;
     padding: 12px;
     vertical-align: middle;
@@ -31,14 +31,19 @@ body {
 
 .navbar a:hover {
     color: var(--main-color);
-    font-size: 22px;
-    text-shadow: 2px 2px 5px black;
+    text-shadow: 5px 5px 5px black;
+    transition-duration: 0.4s;
 }
 
 h1, p, button {
-    display: flex;
+    display: block;
     margin: 75px;
     color: var(--text-color);
+}
+
+.redtext {
+    margin: 0;
+    color: var(--main-color);
 }
 
 h1 {
@@ -47,8 +52,12 @@ h1 {
 
 #profile {
     font-size: 150%;
-    word-wrap: break-word;
+    overflow-wrap: break-word;
     max-width: 55%;
+}
+
+#profile h1 {
+    max-width: 15em;
 }
 
 button {
@@ -65,22 +74,13 @@ button:hover {
     box-shadow: 5px 5px 5px var(--main-color);
 }
 
-.row {
-    display: flex;
-}
-
-.column {
-    flex: 50%;
-    padding: 5px;
-}
-
-#image {
-    float: right;
-    margin-top: 150px;
-    margin-right: 300px;
-}
-
 footer {
     position: absolute;
     bottom: 5px;
+    margin: 0;
+}
+
+footer p {
+    margin: 5px;
+    bottom: 5px
 }
